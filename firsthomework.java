@@ -9,11 +9,11 @@ class Subway{
 	}
 }
 
-// homework 2_3 커피원산지 
 Subway s = new Subway();
 s.setLine(4);
 s.subwayRun();
 
+// homework 2_3 커피원산지 
 class BrazilCoffee {
 	String origin;
 	int degreeOfRoast;
