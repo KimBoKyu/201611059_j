@@ -15,17 +15,19 @@ class P10_People{
 			sumx = data[i][0]+sumx;
 			sumy = data[i][1]+sumy;
 		}
-		int averagex=0;
-		int averagey=0;
-		averagex = sumx/data.length;
-		averagey = sumy/data.length;
-		System.out.printf("Man average %d, Woman average %d\n",averagex,averagey);
+		float averagex=0f;
+		float averagey=0f;
+		averagex = (float)sumx/(float)data.length;
+		averagey = (float)sumy/(float)data.length;
+		System.out.printf("Man average %.1f, Woman average %.1f\n",averagex,averagey);
 	}
 	static void clacAdSum(int[][] data){
 		for(int i=0; i<data.length; i++){
 			int sumAD=0;
+			float averageAD=0;
 			sumAD = data[i][0]+data[i][1];
-			System.out.printf("Sum for City%d is %d\n",i+1,sumAD);
+			averageAD = (float)sumAD/2f;
+			System.out.printf("Sum for City%d is %d And Average is %.1f\n",i+1,sumAD, averageAD);
 		}
 	}
 	public static void main(String[] args){
