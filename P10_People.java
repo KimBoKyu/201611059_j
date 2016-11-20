@@ -6,7 +6,27 @@ class P10_People{
 			sumx = data[i][0]+sumx;
 			sumy = data[i][1]+sumy;
 		}
-		System.out.printf("남자의 합계는 %d, 여자의 합계는 %d\n",sumx,sumy);
+		System.out.printf("Man sum %d, Woman sum %d\n",sumx,sumy);
+	}
+	static void calcAverage(int[][] data){
+		int sumx=0;
+		int sumy=0;
+		for(int i=0; i<data.length; i++){
+			sumx = data[i][0]+sumx;
+			sumy = data[i][1]+sumy;
+		}
+		int averagex=0;
+		int averagey=0;
+		averagex = sumx/data.length;
+		averagey = sumy/data.length;
+		System.out.printf("Man average %d, Woman average %d\n",averagex,averagey);
+	}
+	static void clacAdSum(int[][] data){
+		for(int i=0; i<data.length; i++){
+			int sumAD=0;
+			sumAD = data[i][0]+data[i][1];
+			System.out.printf("Sum for City%d is %d\n",i+1,sumAD);
+		}
 	}
 	public static void main(String[] args){
 		int[][] data={
@@ -38,5 +58,7 @@ class P10_People{
 		};
 		P10_People p = new P10_People();
 		p.calcSum(data);
+		p.calcAverage(data);
+		p.clacAdSum(data);
 	}
 }
