@@ -8,7 +8,7 @@ public class Circle extends Point{
 		radius = r;
 	}
 	public double getArea(){
-		area = radius*radius*3.14;
+		area = radius*radius*Math.PI;
 		return area;
 	}
 	public void callArea(){
