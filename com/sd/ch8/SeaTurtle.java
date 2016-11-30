@@ -10,6 +10,6 @@ public class SeaTurtle extends Turtle {
 		s.setFood("BaDa");
 		s.eat();
 		s.swim();
-		System.out.println("Land Turtle has "+s.nLimbs+" limbs");
+		System.out.println("Sea Turtle has "+s.nLimbs+" limbs");
 	}
 }
