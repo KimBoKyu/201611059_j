@@ -1,3 +1,4 @@
+package com.sd.hello;
 class PhraseOMatic {
     public void makePhrase() {
         String[] wordListOne = {"24/7", "multi-Tier", "30,000 foot", "B-to-B",
